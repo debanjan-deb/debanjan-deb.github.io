@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/app.js" async></script>
+  </head>
+
+  <body>
+    <div class="main_div">
+      <div class="music_container">
+        <h2 id="song">MUSIC PLAYER</h2>
+        <h3 id="artist">Debanjan Dey</h3>
+        <div class="img_container">
+          <img src="img/NoImg.png" alt />
+        </div>
+        <audio src="Some_Music.mp3"></audio>
+        <!-- This line is the progress bar and the duration -->
+        <div class="progressbar_container" id="progress_container">
+          <div class="progress_duration_meter">
+            <div id="current_time">0.00</div>
+            <div id="duration">0.00</div>
+          </div>
+          <div class="progress_div" id="progress_div">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <!-- This block is for music controls -->
+        <div class="music_controls">
+          <i class="fas fa-arrow-circle-left" id="prev" title="previous"></i>
+          <i class="fas fa-play-circle main_button" id="play" title="play"></i>
+          <i class="fas fa-arrow-circle-right" id="next" title="next"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
